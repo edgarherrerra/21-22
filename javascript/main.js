@@ -6,30 +6,23 @@ const context = canvas.getContext('2d')
 context.canvas.width = innerWidth;
 context.canvas.height = innerHeight;
 
-// Object of images.
-let images = {
-  background: './images/Background/Background.png'
-}
-
-// Classes.
-class Board {
-  constructor(img) {
-    this.x = 0
-    this.y = 0
-    this.width = canvas.width
-    this.height = canvas.height
-    this.img = new Image()
-    this.img.src = img
-    this.img.onload = () => {
-      this.draw()
-    }
-  }
-  
-  draw() {
-    context.drawImage(this.img, this.x, this.y, this.width, this.height)
-  }
-}
+// Variables aux.
+let frames = 0
+let interval
 
 // Instance and draw
 let scenario = new Board(images.background)
 scenario.draw()
+
+function update() {
+  frames++
+  context.clearRect(0, 0, canvas.width, canvas.height);
+  scenario.draw()
+}
+
+function startGame() {
+  if(interval) return
+  interval = setInterval(update, 1000 / 120)
+}
+
+startGame()
