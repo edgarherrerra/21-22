@@ -12,12 +12,15 @@ let interval
 
 // Instance and draw
 let scenario = new Board(images.background)
-scenario.draw()
+let character21 = new Character(400, canvas.height - 500, images.characterOne)
+// let character22 = new Character(800,  canvas.height - 500, images.characterTwo)
 
 function update() {
   frames++
   context.clearRect(0, 0, canvas.width, canvas.height);
   scenario.draw()
+  character21.draw()
+  // character22.draw()
 }
 
 function startGame() {
