@@ -1,26 +1,3 @@
-// Object of images.
-let images = {
-  background: './images/Background/background.png',
-}
-
-let breathe21 = {
-  breathe1: './images/21/Breathe/breathe-1.png',
-  breathe2: './images/21/Breathe/breathe-2.png',
-  breathe3: './images/21/Breathe/breathe-3.png',
-  breathe4: './images/21/Breathe/breathe-4.png',
-  breathe5: './images/21/Breathe/breathe-5.png',
-  breathe6: './images/21/Breathe/breathe-6.png',
-  breathe7: './images/21/Breathe/breathe-7.png',
-  breathe8: './images/21/Breathe/breathe-8.png',
-  breathe9: './images/21/Breathe/breathe-9.png',
-  breathe10: './images/21/Breathe/breathe-10.png',
-  breathe11: './images/21/Breathe/breathe-11.png',
-  breathe12: './images/21/Breathe/breathe-12.png',
-  breathe13: './images/21/Breathe/breathe-13.png',
-  breathe14: './images/21/Breathe/breathe-14.png',
-  breathe15: './images/21/Breathe/breathe-15.png'
-}
-
 // Classes.
 class Board {
   constructor(img) {
@@ -137,6 +114,58 @@ class Character {
   moveUp() {
     if(this.y < 0 + this.height - 40) return
     this.y -= 100 
+  }
+
+}
+
+class CharacterTwo extends  Character {
+  constructor(x, y) {
+    super(x, y);
+    this.img = new Image
+    this.img.src = breathe22.breathe1
+
+    this.img2 = new Image
+    this.img2.src = breathe22.breathe2
+
+    this.img3 = new Image
+    this.img3.src = breathe22.breathe3
+
+    this.img4 = new Image
+    this.img4.src = breathe22.breathe4
+
+    this.img5 = new Image
+    this.img5.src = breathe22.breathe5
+
+    this.img6 = new Image
+    this.img6.src = breathe22.breathe6
+
+    this.img7 = new Image
+    this.img7.src = breathe22.breathe7
+
+    this.img8 = new Image
+    this.img8.src = breathe22.breathe8
+
+    this.img9 = new Image
+    this.img9.src = breathe22.breathe9
+
+    this.img10 = new Image
+    this.img10.src = breathe22.breathe10
+
+    this.img11 = new Image
+    this.img11.src = breathe22.breathe11
+
+    this.img12 = new Image
+    this.img12.src = breathe22.breathe12
+
+    this.img13 = new Image
+    this.img13.src = breathe22.breathe13
+
+    this.img14 = new Image
+    this.img14.src = breathe22.breathe14
+
+    this.img15 = new Image
+    this.img15.src = breathe22.breathe15
+
   }
 
 }
