@@ -1,6 +1,6 @@
 // Object of images.
 let images = {
-  background: './images/Background/background.png',
+  background: './images/background/background.png',
 }
 
 let breathe21 = {
