@@ -11,7 +11,7 @@ let frames = 0
 let interval
 
 // Instance and draw
-let scenario = new Board(images.background)
+let scenario = new Board()
 let character21 = new Character(400, canvas.height - 500, images.characterOne)
 let character22 = new CharacterTwo(800,  canvas.height - 500, images.characterTwo)
 

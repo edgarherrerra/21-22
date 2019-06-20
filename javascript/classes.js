@@ -6,7 +6,7 @@ class Board {
     this.width = canvas.width
     this.height = canvas.height
     this.img = new Image()
-    this.img.src = img
+    this.img.src = images.background
     this.img.onload = () => {
       this.draw()
     }
