@@ -9,7 +9,10 @@
    margin: 0;
    overscroll-behavior: none;
    overflow-x: hidden;
+   overflow-y: hidden;
    font-family: 'Montserrat', sans-serif;
+   height: 100vh;
+   width: 100vw;
  }
  
  p {
@@ -39,6 +42,10 @@
 
  .directed small {
    padding-bottom: 40px;
+ }
+
+ .show {
+   display: block;
  }
 
  .hide {
