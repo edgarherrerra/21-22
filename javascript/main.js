@@ -20,6 +20,7 @@ let musicInterval
 let lifes = 3
 let bol = true
 let obstacles = []
+let single = true
  
 // Instance and draw
 let scenario = new Board()
@@ -47,6 +48,7 @@ function update() {
   clearInterval(startInterval)
 }
 function multiplayerGame() {
+  single = false
   if(interval) return
   interval = setInterval(update, 1000 / 120)
   setInterval(playAudio, 4000)
@@ -86,16 +88,23 @@ function drawObstacles() {
 
 // Collitions
 function checkCollition() {
+ 
+ 
   obstacles.map((obstacle, i) => {
+    
     if (character21.isTouching(obstacle)) {
       lifes -= 1
-      gameOver()
+      console.log(obstacle)
+      console.log(character21);
       obstacles.splice(i, 1)
+      gameOver()
     }
-    if (character22.isTouching(obstacle)) {
+    if (!single && character22.isTouching(obstacle)) {
       lifes -= 1
-      gameOver()
+      console.log(obstacle)
+      console.log(character22);
       obstacles.splice(i, 1)
+      gameOver()
     }
   })
 }

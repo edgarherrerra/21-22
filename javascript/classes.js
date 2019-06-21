@@ -255,9 +255,9 @@ class Character {
 
   isTouching(obstacle) {
     return (
-      this.x < obstacle.x + obstacle.img.width / 2 &&
+      this.x < obstacle.x + obstacle.img.width / 2.5 &&
       this.x + this.img.width > obstacle.x &&
-      this.y < obstacle.y + obstacle.img.height / 2 &&
+      this.y < obstacle.y + obstacle.img.height / 2.5 &&
       this.y + this.img.height > obstacle.y
     )
   }
@@ -419,6 +419,6 @@ class Obstacle {
     this.move()
   }
   move(){
-    this.x -= 7
+    this.x -= 5
   }
 }
