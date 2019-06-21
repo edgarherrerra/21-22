@@ -260,47 +260,138 @@ class CharacterTwo extends Character {
     this.img = new Image
     this.img.src = breathe22.breathe1
 
+    this.run = new Image()
+    this.run.src = run22.run1
+
+    this.jump = new Image()
+    this.jump.src = jump22.jump1
+
+
     this.img2 = new Image
     this.img2.src = breathe22.breathe2
+
+    this.run2 = new Image()
+    this.run2.src = run22.run2
+
+    this.jump2 = new Image()
+    this.jump2.src = jump22.jump2
 
     this.img3 = new Image
     this.img3.src = breathe22.breathe3
 
+    this.run3 = new Image()
+    this.run3.src = run22.run3
+
+    this.jump3 = new Image()
+    this.jump3.src = jump22.jump3
+
     this.img4 = new Image
     this.img4.src = breathe22.breathe4
+
+    this.run4 = new Image()
+    this.run4.src = run22.run4
+
+    this.jump4 = new Image()
+    this.jump4.src = jump22.jump4
 
     this.img5 = new Image
     this.img5.src = breathe22.breathe5
 
+    this.run5 = new Image()
+    this.run5.src = run22.run5
+
+    this.jump5 = new Image()
+    this.jump5.src = jump22.jump5
+
     this.img6 = new Image
     this.img6.src = breathe22.breathe6
+
+    this.run6 = new Image()
+    this.run6.src = run22.run6
+
+    this.jump6 = new Image()
+    this.jump6.src = jump22.jump6
 
     this.img7 = new Image
     this.img7.src = breathe22.breathe7
 
+    this.run7 = new Image()
+    this.run7.src = run22.run7
+
+    this.jump7 = new Image()
+    this.jump7.src = jump22.jump7
+
     this.img8 = new Image
     this.img8.src = breathe22.breathe8
+
+    this.run8 = new Image()
+    this.run8.src = run22.run8
+
+    this.jump8 = new Image()
+    this.jump8.src = jump22.jump8
 
     this.img9 = new Image
     this.img9.src = breathe22.breathe9
 
+    this.run9 = new Image()
+    this.run9.src = run22.run9
+
+    this.jump9 = new Image()
+    this.jump9.src = jump22.jump9
+
     this.img10 = new Image
     this.img10.src = breathe22.breathe10
+
+    this.run10 = new Image()
+    this.run10.src = run22.run10
+
+    this.jump10 = new Image()
+    this.jump10.src = jump22.jump10
 
     this.img11 = new Image
     this.img11.src = breathe22.breathe11
 
+    this.run11 = new Image()
+    this.run11.src = run22.run11
+
+    this.jump11 = new Image()
+    this.jump11.src = jump22.jump11
+
     this.img12 = new Image
     this.img12.src = breathe22.breathe12
+
+    this.run12 = new Image()
+    this.run12.src = run22.run12
+
+    this.jump12 = new Image()
+    this.jump12.src = jump22.jump12
 
     this.img13 = new Image
     this.img13.src = breathe22.breathe13
 
+    this.run13 = new Image()
+    this.run13.src = run22.run13
+
+    this.jump13 = new Image()
+    this.jump13.src = jump22.jump13
+
     this.img14 = new Image
     this.img14.src = breathe22.breathe14
 
+    this.run14 = new Image()
+    this.run14.src = run22.run14
+
+    this.jump14 = new Image()
+    this.jump14.src = jump22.jump14
+
     this.img15 = new Image
     this.img15.src = breathe22.breathe15
+
+    this.run15 = new Image()
+    this.run15.src = run22.run15
+
+    this.jump15 = new Image()
+    this.jump15.src = jump22.jump15
 
   }
 

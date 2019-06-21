@@ -74,6 +74,17 @@ addEventListener('keydown', (e) => {
         character21.changeStatus('Jump')
         bol = false
       }
+    }
+    else if(e.keyCode === 90) {
+      character22.moveRight()
+      character22.changeStatus('Run')
+    } 
+    else if(e.keyCode === 88) {
+      if(bol) {
+        character22.moveUp()
+        character22.changeStatus('Jump')
+        bol = false
+      }
     } 
 })
 
@@ -85,5 +96,14 @@ addEventListener("keyup", (e) => {
     character21.y = canvas.height - 500
     character21.changeStatus('Breathe')
     character21.animateHelper = 0
+  }
+  else if(e.keyCode === 90) {
+    character22.changeStatus('Breathe')
+  } 
+  else if(e.keyCode === 88) {
+    bol = true
+    character22.y = canvas.height - 500
+    character22.changeStatus('Breathe')
+    character22.animateHelper = 0
   }
 })

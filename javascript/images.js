@@ -103,12 +103,12 @@ let jump22 = {
   jump7: './images/22/Jump/Jump-7.png',
   jump8: './images/22/Jump/Jump-8.png',
   jump9: './images/22/Jump/Jump-9.png',
-  jump0: './images/22/Jump/Jump-10.png',
-  jump1: './images/22/Jump/Jump-11.png',
-  jump2: './images/22/Jump/Jump-12.png',
-  jump3: './images/22/Jump/Jump-13.png',
-  jump4: './images/22/Jump/Jump-14.png',
-  jump5: './images/22/Jump/Jump-15.png'
+  jump10: './images/22/Jump/Jump-10.png',
+  jump11: './images/22/Jump/Jump-11.png',
+  jump12: './images/22/Jump/Jump-12.png',
+  jump13: './images/22/Jump/Jump-13.png',
+  jump14: './images/22/Jump/Jump-14.png',
+  jump15: './images/22/Jump/Jump-15.png'
 }
 
 let died21 = {
