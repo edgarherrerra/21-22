@@ -226,3 +226,9 @@
   width: 100%;
   justify-content: space-evenly;
 }
+
+.keys-game {
+  position: absolute;
+  left: 3%;
+  top: 7%;
+}
