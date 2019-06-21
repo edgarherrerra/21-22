@@ -4,6 +4,7 @@ const onePlayerButton = document.querySelector('.one-player')
 const twoPlayerButton = document.querySelector('.two-player')
 const playerButtonContainer = document.querySelector('.players')
 const keysGameContainer = document.querySelectorAll('.keys-game-container')
+const gameOverButton = document.querySelector('.game-over')
 const context = canvas.getContext('2d')
 let correctSound = ''
 
@@ -24,8 +25,8 @@ let single = true
  
 // Instance and draw
 let scenario = new Board()
-let character21 = new Character(400, canvas.height - 500, images.characterOne)
-let character22 = new CharacterTwo(800,  canvas.height - 500, images.characterTwo)
+let character21 = new Character(50, canvas.height - 500, images.characterOne)
+let character22 = new CharacterTwo(300,  canvas.height - 500, images.characterTwo)
 
 
 // Pre-StartGame.
@@ -44,7 +45,7 @@ function update() {
   character21.draw()
   character22.draw()
   drawObstacles()
-  checkCollition()
+  checkCollision()
   clearInterval(startInterval)
 }
 function multiplayerGame() {
@@ -63,7 +64,7 @@ function updateSingleGame() {
   scenario.draw()
   character21.draw()
   drawObstacles()
-  checkCollition()
+  checkCollision()
   clearInterval(startInterval)
 }
 function singleGame() {
@@ -86,9 +87,8 @@ function drawObstacles() {
   })
 }
 
-// Collitions
-function checkCollition() {
- 
+// Collisions
+function checkCollision() {
  
   obstacles.map((obstacle, i) => {
     
@@ -115,6 +115,8 @@ function gameOver() {
   if(lifes == 0) {
     clearInterval(interval)
     clearInterval(musicInterval)
+    document.body.appendChild(gameOverButton)
+    gameOverButton.style.opacity = 1 
   }
 }
 

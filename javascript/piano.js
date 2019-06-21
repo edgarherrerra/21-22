@@ -58,6 +58,7 @@ playButton.addEventListener("click", () => {
 
     setTimeout(() => {
       piano.remove()
+      gameOverButton.remove()
       canvasContainer.className = "transition"
     }, 2000);
 })

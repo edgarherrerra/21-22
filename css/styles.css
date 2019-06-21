@@ -186,7 +186,17 @@
   color: #63d8f9;
 }
 
-.play-button, .players button {
+.game-over {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  transition: 1s;
+  opacity: 0;
+}
+
+.play-button, .players button, .game-over {
   color: white;
   font-size: 22px;
   font-family: 'Montserrat', sans-serif;
@@ -216,7 +226,7 @@
   outline: 0;
 }
 
-.play-button:hover, .players button:hover {
+.play-button:hover, .players button:hover, .game-over:hover {
   box-shadow: rgba(101, 41, 255, 0.25) 0px 20px 40px;
   transform: translateY(-3px);
 }
