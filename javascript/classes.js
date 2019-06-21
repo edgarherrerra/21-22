@@ -16,6 +16,7 @@ class Board {
     context.drawImage(this.img, this.x, this.y, this.width, this.height)
     context.drawImage(this.img, this.x + canvas.width, this.y, this.width, this.height)
     context.font = '50px Arial'
+    lifes > 3 ? context.fillText("☕️☕️☕️", canvas.width - 200, 80) :
     lifes == 3 ? context.fillText("☕️☕️☕️", canvas.width - 200, 80) :
       lifes == 2 ? context.fillText("☕️☕️", canvas.width - 150, 80) :
         lifes == 1 ? context.fillText("☕️", canvas.width - 100, 80) : context.fillText("", canvas.width - 100, 80)

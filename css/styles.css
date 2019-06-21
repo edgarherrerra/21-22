@@ -37,6 +37,10 @@
    position: relative;
  }
 
+ .test {
+   background-color: red;
+ }
+
  .splashscreen-title, .directed {
   display: flex;
   height: 50%;
@@ -228,7 +232,21 @@
 }
 
 .keys-game {
+  display: flex;
   position: absolute;
   left: 3%;
   top: 7%;
+}
+
+.keys-game-container {
+  display: inherit;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: white;
+  border: 1px solid white;
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+  transition: all .07s ease;
 }

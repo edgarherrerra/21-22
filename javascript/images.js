@@ -146,3 +146,5 @@ let died22 = {
   died14: './images/22/Died/Died-14.png',
   died15: './images/22/Died/Died-15.png'
 }
+
+let sounds = ['./sounds/c.mp3', './sounds/d.mp3', './sounds/e.mp3', './sounds/f.mp3', './sounds/g.mp3', './sounds/a.mp3', './sounds/b.mp3', './sounds/cplus.mp3']
