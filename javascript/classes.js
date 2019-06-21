@@ -410,15 +410,15 @@ class CharacterTwo extends Character {
 class Obstacle {          
   constructor() {
     this.x = canvas.width + 50
-    this.y = canvas.height - 270
+    this.y = canvas.height - 200
     this.img = new Image()
     this.img.src = './images/obstacle/chair.png'
   }
   draw() {
-    context.drawImage(this.img, this.x, this.y, this.img.width / 2, this.img.height / 2)
+    context.drawImage(this.img, this.x, this.y, this.img.width / 2.5, this.img.height / 2.5)
     this.move()
   }
   move(){
-    this.x -= 10
+    this.x -= 7
   }
 }

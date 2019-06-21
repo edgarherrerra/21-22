@@ -24,6 +24,7 @@ function splashscreen() {
   setTimeout(() => {
     splash.remove()
     piano.className = "transition"
+    window.addEventListener('keydown', playNote);
   }, 6000);
 }
 
@@ -48,7 +49,6 @@ function removeTransition(e){
 
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 
-window.addEventListener('keydown', playNote);
 
 // Show canvas
 playButton.addEventListener("click", () => {

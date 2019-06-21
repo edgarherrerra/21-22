@@ -86,26 +86,33 @@ function drawObstacles() {
 
 // Collitions
 function checkCollition() {
-  obstacles.map(obstacle => {
+  obstacles.map((obstacle, i) => {
     if (character21.isTouching(obstacle)) {
+      lifes -= 1
       gameOver()
+      obstacles.splice(i, 1)
+    }
+    if (character22.isTouching(obstacle)) {
+      lifes -= 1
+      gameOver()
+      obstacles.splice(i, 1)
     }
   })
 }
 
+
 // Game over
 function gameOver() {
-  if(lifes <= 0) {
+  if(lifes == 0) {
     clearInterval(interval)
     clearInterval(musicInterval)
   }
 }
 
-
 // Play random sound
 let audio = new Audio()
 function playAudio() {
-  audio.src = sounds[0]
+  audio.src = sounds[Math.floor(Math.random() * sounds.length)]
   correctSound = audio.src
   audio.play()
 }
@@ -176,7 +183,7 @@ function playNote(e){
   if(lifes > 3) {
     lifes = 3
   }
-  console.log(lifes)
+  gameOver()
 
   divSmall = document.querySelector(`div[data-small="${e.keyCode}"]`)
   if(!divSmall) return
