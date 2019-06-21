@@ -15,6 +15,7 @@ let interval
 let startInterval
 let lifes = 3
 let bol = true
+let obstacles = []
  
 // Instance and draw
 let scenario = new Board()
@@ -38,6 +39,8 @@ function update() {
   scenario.draw()
   character21.draw()
   character22.draw()
+  drawObstacles()
+  checkCollition()
   clearInterval(startInterval)
 }
 function multiplayerGame() {
@@ -53,6 +56,8 @@ function updateSingleGame() {
   context.clearRect(0, 0, canvas.width, canvas.height);
   scenario.draw()
   character21.draw()
+  drawObstacles()
+  checkCollition()
   clearInterval(startInterval)
 }
 function singleGame() {
@@ -62,6 +67,32 @@ function singleGame() {
 
 onePlayerButton.addEventListener("click", singleGame)
 twoPlayerButton.addEventListener("click", multiplayerGame)
+
+
+function generateObstacles() {
+  obstacles.push(new Obstacle())
+}
+
+function drawObstacles() {
+    if(frames % 800 === 0) {
+      generateObstacles()    
+  } 
+  obstacles.forEach(obstacle => {
+    obstacle.draw()
+  })
+}
+
+function checkCollition() {
+  obstacles.map(obstacle => {
+    if (character21.isTouching(obstacle)) {
+      gameOver()
+    }
+  })
+}
+
+function gameOver() {
+  console.log('Collision');
+}
 
 
 addEventListener('keydown', (e) => {
@@ -87,6 +118,7 @@ addEventListener('keydown', (e) => {
       }
     } 
 })
+
 
 addEventListener("keyup", (e) => {
   if(e.keyCode === 39) {
